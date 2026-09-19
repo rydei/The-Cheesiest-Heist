@@ -331,3 +331,5 @@ debug_color = Color(0.76862746, 0.16078432, 1, 1)
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 218.26744, 25.863853, -205.66821)
 shape = SubResource("BoxShape3D_db2k6")
 debug_color = Color(0.6862745, 0.29411766, 1, 1)
+
+[editable path="Sketchfab_Scene"]
