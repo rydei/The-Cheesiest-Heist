@@ -27,7 +27,8 @@ The game was made on Godot using GDScript and various assets including models fo
 | **Move** | `W`, `A`, `S`, `D` |
 | **Look Around** | Mouse movement |
 | **Jump** | `Space` |
-| **Pause / Release Mouse** | `Esc` |
+| **Sprint/increase jump height** | `Shift/Shift+Space` |
+| **Reset** | `R` |
 
 ---
 
