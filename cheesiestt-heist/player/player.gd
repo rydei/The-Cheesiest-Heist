@@ -14,7 +14,7 @@ func _unhandled_input(event):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 		
 func _physics_process(delta):
-	const SPEED = 80.5
+	const SPEED = 80
 	var input_direction_2D = Input.get_vector(
 		"moveLeft","moveRight","moveUp","moveDown"
 	)
