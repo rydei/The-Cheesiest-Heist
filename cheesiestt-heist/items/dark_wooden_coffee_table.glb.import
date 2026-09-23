@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dxhitfuqescde"
-path="res://.godot/imported/dark_wooden_coffee_table.glb-77c3874a72b1264ab7f7ee2cb911a081.scn"
+path="res://.godot/imported/dark_wooden_coffee_table.glb-ccb4a57a908fe51cd276e537c18a44e2.scn"
 
 [deps]
 
-source_file="res://dark_wooden_coffee_table.glb"
-dest_files=["res://.godot/imported/dark_wooden_coffee_table.glb-77c3874a72b1264ab7f7ee2cb911a081.scn"]
+source_file="res://items/dark_wooden_coffee_table.glb"
+dest_files=["res://.godot/imported/dark_wooden_coffee_table.glb-ccb4a57a908fe51cd276e537c18a44e2.scn"]
 
 [params]
 

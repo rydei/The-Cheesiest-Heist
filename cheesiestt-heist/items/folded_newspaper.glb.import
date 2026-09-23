@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c8u8mwfpeaxx0"
-path="res://.godot/imported/folded_newspaper.glb-6d046fa7da541c8a547e3b4d3fc0036b.scn"
+path="res://.godot/imported/folded_newspaper.glb-93b928eb6f85a80ae35bd839292f53bc.scn"
 
 [deps]
 
-source_file="res://folded_newspaper.glb"
-dest_files=["res://.godot/imported/folded_newspaper.glb-6d046fa7da541c8a547e3b4d3fc0036b.scn"]
+source_file="res://items/folded_newspaper.glb"
+dest_files=["res://.godot/imported/folded_newspaper.glb-93b928eb6f85a80ae35bd839292f53bc.scn"]
 
 [params]
 

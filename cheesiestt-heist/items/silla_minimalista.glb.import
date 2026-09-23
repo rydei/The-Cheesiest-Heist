@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d0vb70dlttccp"
-path="res://.godot/imported/silla_minimalista.glb-1890b7ea9fa9aa78036385a200b7d08d.scn"
+path="res://.godot/imported/silla_minimalista.glb-e2dbae40311d1c510e99fa40827d1029.scn"
 
 [deps]
 
-source_file="res://silla_minimalista.glb"
-dest_files=["res://.godot/imported/silla_minimalista.glb-1890b7ea9fa9aa78036385a200b7d08d.scn"]
+source_file="res://items/silla_minimalista.glb"
+dest_files=["res://.godot/imported/silla_minimalista.glb-e2dbae40311d1c510e99fa40827d1029.scn"]
 
 [params]
 

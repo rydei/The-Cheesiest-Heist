@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2th1nr1f6ibh"
-path.s3tc="res://.godot/imported/cordless_drill_Drill_AO-Drill_ROUGHNESS-Drill_METALNESS.png-e15d5f226006dcfdcabd3a59e7771878.s3tc.ctex"
+path.s3tc="res://.godot/imported/cordless_drill_Drill_AO-Drill_ROUGHNESS-Drill_METALNESS.png-9284602a642d8537911a46eceb3f7446.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://cordless_drill_Drill_AO-Drill_ROUGHNESS-Drill_METALNESS.png"
-dest_files=["res://.godot/imported/cordless_drill_Drill_AO-Drill_ROUGHNESS-Drill_METALNESS.png-e15d5f226006dcfdcabd3a59e7771878.s3tc.ctex"]
+source_file="res://items/cordless_drill_Drill_AO-Drill_ROUGHNESS-Drill_METALNESS.png"
+dest_files=["res://.godot/imported/cordless_drill_Drill_AO-Drill_ROUGHNESS-Drill_METALNESS.png-9284602a642d8537911a46eceb3f7446.s3tc.ctex"]
 
 [params]
 

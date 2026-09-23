@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c1t2fyoacbuoc"
-path="res://.godot/imported/colorful_balloons.glb-d0a660c0537d0dc4cf12a0397338d86c.scn"
+path="res://.godot/imported/colorful_balloons.glb-798fdd736324bc316ceb02e602b2ece6.scn"
 
 [deps]
 
-source_file="res://colorful_balloons.glb"
-dest_files=["res://.godot/imported/colorful_balloons.glb-d0a660c0537d0dc4cf12a0397338d86c.scn"]
+source_file="res://items/colorful_balloons.glb"
+dest_files=["res://.godot/imported/colorful_balloons.glb-798fdd736324bc316ceb02e602b2ece6.scn"]
 
 [params]
 

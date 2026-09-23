@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvhepdeuw6use"
-path.s3tc="res://.godot/imported/japanese_edo_wall_hangings_1.png-bf1dfdced89afd8c9aaeb0608264aa56.s3tc.ctex"
+path.s3tc="res://.godot/imported/japanese_edo_wall_hangings_1.png-df4d3f470ca326a8174d805b38ffa776.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://japanese_edo_wall_hangings_1.png"
-dest_files=["res://.godot/imported/japanese_edo_wall_hangings_1.png-bf1dfdced89afd8c9aaeb0608264aa56.s3tc.ctex"]
+source_file="res://items/japanese_edo_wall_hangings_1.png"
+dest_files=["res://.godot/imported/japanese_edo_wall_hangings_1.png-df4d3f470ca326a8174d805b38ffa776.s3tc.ctex"]
 
 [params]
 

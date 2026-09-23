@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://y7jdb38nvlx5"
-path="res://.godot/imported/handsaw.glb-68c6a6f9037fec091547c0f4508531ae.scn"
+path="res://.godot/imported/handsaw.glb-1680a32efeca4c13ef20b84688dccfb1.scn"
 
 [deps]
 
-source_file="res://handsaw.glb"
-dest_files=["res://.godot/imported/handsaw.glb-68c6a6f9037fec091547c0f4508531ae.scn"]
+source_file="res://items/handsaw.glb"
+dest_files=["res://.godot/imported/handsaw.glb-1680a32efeca4c13ef20b84688dccfb1.scn"]
 
 [params]
 

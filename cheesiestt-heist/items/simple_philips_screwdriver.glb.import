@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bi2xqhfvpw3h8"
-path="res://.godot/imported/simple_philips_screwdriver.glb-69b5cf65ee3bb73deff143ecc54e3d3d.scn"
+path="res://.godot/imported/simple_philips_screwdriver.glb-0a73404220ddd6cac23084eacf0f465c.scn"
 
 [deps]
 
-source_file="res://simple_philips_screwdriver.glb"
-dest_files=["res://.godot/imported/simple_philips_screwdriver.glb-69b5cf65ee3bb73deff143ecc54e3d3d.scn"]
+source_file="res://items/simple_philips_screwdriver.glb"
+dest_files=["res://.godot/imported/simple_philips_screwdriver.glb-0a73404220ddd6cac23084eacf0f465c.scn"]
 
 [params]
 

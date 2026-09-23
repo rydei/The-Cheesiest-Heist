@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s5qlgbwm1m63"
-path.s3tc="res://.godot/imported/cordless_drill_Drill_NORMAL.png-c7d91889dc6f44318170fe86f95dd802.s3tc.ctex"
+path.s3tc="res://.godot/imported/cordless_drill_Drill_NORMAL.png-7ffc9dce6545b9ac618ba296349746a6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://cordless_drill_Drill_NORMAL.png"
-dest_files=["res://.godot/imported/cordless_drill_Drill_NORMAL.png-c7d91889dc6f44318170fe86f95dd802.s3tc.ctex"]
+source_file="res://items/cordless_drill_Drill_NORMAL.png"
+dest_files=["res://.godot/imported/cordless_drill_Drill_NORMAL.png-7ffc9dce6545b9ac618ba296349746a6.s3tc.ctex"]
 
 [params]
 

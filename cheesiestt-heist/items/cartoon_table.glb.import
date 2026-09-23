@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cdgyj02q2elfk"
-path="res://.godot/imported/cartoon_table.glb-af058dddaddbc80185d16dab8d5ca462.scn"
+path="res://.godot/imported/cartoon_table.glb-4ba916327eecb64f22535ecc9af214ec.scn"
 
 [deps]
 
-source_file="res://cartoon_table.glb"
-dest_files=["res://.godot/imported/cartoon_table.glb-af058dddaddbc80185d16dab8d5ca462.scn"]
+source_file="res://items/cartoon_table.glb"
+dest_files=["res://.godot/imported/cartoon_table.glb-4ba916327eecb64f22535ecc9af214ec.scn"]
 
 [params]
 

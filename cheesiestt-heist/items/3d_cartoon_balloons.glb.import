@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c4yp6jo75io37"
-path="res://.godot/imported/3d_cartoon_balloons.glb-b5cbfb6257dc5e6a7c1d9813d60678dc.scn"
+path="res://.godot/imported/3d_cartoon_balloons.glb-39f04e8d3b0dfb65bec20b4e1e5006f3.scn"
 
 [deps]
 
-source_file="res://3d_cartoon_balloons.glb"
-dest_files=["res://.godot/imported/3d_cartoon_balloons.glb-b5cbfb6257dc5e6a7c1d9813d60678dc.scn"]
+source_file="res://items/3d_cartoon_balloons.glb"
+dest_files=["res://.godot/imported/3d_cartoon_balloons.glb-39f04e8d3b0dfb65bec20b4e1e5006f3.scn"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkdfp6n2q30ij"
-path.s3tc="res://.godot/imported/simple_philips_screwdriver_1.png-b1d1e078cbf04a11a563a4340d655549.s3tc.ctex"
+path.s3tc="res://.godot/imported/simple_philips_screwdriver_1.png-cd91dd09bec33177800076f9fa7a2829.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://simple_philips_screwdriver_1.png"
-dest_files=["res://.godot/imported/simple_philips_screwdriver_1.png-b1d1e078cbf04a11a563a4340d655549.s3tc.ctex"]
+source_file="res://items/simple_philips_screwdriver_1.png"
+dest_files=["res://.godot/imported/simple_philips_screwdriver_1.png-cd91dd09bec33177800076f9fa7a2829.s3tc.ctex"]
 
 [params]
 

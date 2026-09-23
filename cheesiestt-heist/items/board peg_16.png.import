@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmabcbjwg2kyh"
-path.s3tc="res://.godot/imported/board peg_16.png-81ff4db9a9c43925014b53a39e64c953.s3tc.ctex"
+path.s3tc="res://.godot/imported/board peg_16.png-41d860078262a6061dbd356aaae7b690.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://board peg_16.png"
-dest_files=["res://.godot/imported/board peg_16.png-81ff4db9a9c43925014b53a39e64c953.s3tc.ctex"]
+source_file="res://items/board peg_16.png"
+dest_files=["res://.godot/imported/board peg_16.png-41d860078262a6061dbd356aaae7b690.s3tc.ctex"]
 
 [params]
 

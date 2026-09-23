@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cd3c6kavxbq5c"
-path="res://.godot/imported/cordless_drill.glb-adc223cf7f01b94c43b4cbccc6b16c57.scn"
+path="res://.godot/imported/cordless_drill.glb-fd16a6f972b718f355939df46935984a.scn"
 
 [deps]
 
-source_file="res://cordless_drill.glb"
-dest_files=["res://.godot/imported/cordless_drill.glb-adc223cf7f01b94c43b4cbccc6b16c57.scn"]
+source_file="res://items/cordless_drill.glb"
+dest_files=["res://.godot/imported/cordless_drill.glb-fd16a6f972b718f355939df46935984a.scn"]
 
 [params]
 

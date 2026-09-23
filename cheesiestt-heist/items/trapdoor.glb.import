@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://37gn7s57pjy7"
-path="res://.godot/imported/trapdoor.glb-1653154ebcacc607e622119360961581.scn"
+path="res://.godot/imported/trapdoor.glb-78a6f9c02c890e70da01db2645f4878f.scn"
 
 [deps]
 
-source_file="res://trapdoor.glb"
-dest_files=["res://.godot/imported/trapdoor.glb-1653154ebcacc607e622119360961581.scn"]
+source_file="res://items/trapdoor.glb"
+dest_files=["res://.godot/imported/trapdoor.glb-78a6f9c02c890e70da01db2645f4878f.scn"]
 
 [params]
 

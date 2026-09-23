@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bi8tilh4uscj2"
-path="res://.godot/imported/free_3d_sofa__game_ready_asset.glb-d91bfb0846f5a7b48d3635d3446ce54d.scn"
+path="res://.godot/imported/free_3d_sofa__game_ready_asset.glb-be1c5d7c6459a18ad391a27ae11a1935.scn"
 
 [deps]
 
-source_file="res://free_3d_sofa__game_ready_asset.glb"
-dest_files=["res://.godot/imported/free_3d_sofa__game_ready_asset.glb-d91bfb0846f5a7b48d3635d3446ce54d.scn"]
+source_file="res://items/free_3d_sofa__game_ready_asset.glb"
+dest_files=["res://.godot/imported/free_3d_sofa__game_ready_asset.glb-be1c5d7c6459a18ad391a27ae11a1935.scn"]
 
 [params]
 

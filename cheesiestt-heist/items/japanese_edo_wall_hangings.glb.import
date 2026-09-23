@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://khesiyxkn0r3"
-path="res://.godot/imported/japanese_edo_wall_hangings.glb-2d5fd47f1412451685881134bbb3273a.scn"
+path="res://.godot/imported/japanese_edo_wall_hangings.glb-c3bf907f2ccc0eb939791d4810408547.scn"
 
 [deps]
 
-source_file="res://japanese_edo_wall_hangings.glb"
-dest_files=["res://.godot/imported/japanese_edo_wall_hangings.glb-2d5fd47f1412451685881134bbb3273a.scn"]
+source_file="res://items/japanese_edo_wall_hangings.glb"
+dest_files=["res://.godot/imported/japanese_edo_wall_hangings.glb-c3bf907f2ccc0eb939791d4810408547.scn"]
 
 [params]
 

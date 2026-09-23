@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btqrwh732crca"
-path.s3tc="res://.godot/imported/cordless_drill_Drill_BASE_COLOR.png-9b179da0b091b82b882493a3712c53d5.s3tc.ctex"
+path.s3tc="res://.godot/imported/cordless_drill_Drill_BASE_COLOR.png-27a95925012b1d2ca7c4f1bc4e8c2966.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://cordless_drill_Drill_BASE_COLOR.png"
-dest_files=["res://.godot/imported/cordless_drill_Drill_BASE_COLOR.png-9b179da0b091b82b882493a3712c53d5.s3tc.ctex"]
+source_file="res://items/cordless_drill_Drill_BASE_COLOR.png"
+dest_files=["res://.godot/imported/cordless_drill_Drill_BASE_COLOR.png-27a95925012b1d2ca7c4f1bc4e8c2966.s3tc.ctex"]
 
 [params]
 

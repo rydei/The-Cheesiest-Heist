@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1x5d8nyiuvao"
-path.s3tc="res://.godot/imported/folded_newspaper_0.jpg-ec1ebf70df2b42a7919686fb32e874bc.s3tc.ctex"
+path.s3tc="res://.godot/imported/folded_newspaper_0.jpg-4d20bb6e979139be1755a425822ec6d5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://folded_newspaper_0.jpg"
-dest_files=["res://.godot/imported/folded_newspaper_0.jpg-ec1ebf70df2b42a7919686fb32e874bc.s3tc.ctex"]
+source_file="res://items/folded_newspaper_0.jpg"
+dest_files=["res://.godot/imported/folded_newspaper_0.jpg-4d20bb6e979139be1755a425822ec6d5.s3tc.ctex"]
 
 [params]
 

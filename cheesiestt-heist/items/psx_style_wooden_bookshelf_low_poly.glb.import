@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://doa6umt852flm"
-path="res://.godot/imported/psx_style_wooden_bookshelf_low_poly.glb-a27d46aa72370b5b58bd03e57696e5b5.scn"
+path="res://.godot/imported/psx_style_wooden_bookshelf_low_poly.glb-0f870761fda2438deac07739877f37a0.scn"
 
 [deps]
 
-source_file="res://psx_style_wooden_bookshelf_low_poly.glb"
-dest_files=["res://.godot/imported/psx_style_wooden_bookshelf_low_poly.glb-a27d46aa72370b5b58bd03e57696e5b5.scn"]
+source_file="res://items/psx_style_wooden_bookshelf_low_poly.glb"
+dest_files=["res://.godot/imported/psx_style_wooden_bookshelf_low_poly.glb-0f870761fda2438deac07739877f37a0.scn"]
 
 [params]
 

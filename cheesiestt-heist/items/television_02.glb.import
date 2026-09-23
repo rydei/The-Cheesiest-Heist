@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b2tc1fu77sktt"
-path="res://.godot/imported/television_02.glb-8e956951d923b1ba329d079323075bb7.scn"
+path="res://.godot/imported/television_02.glb-56e8be2e902abf27a19a78adf883f267.scn"
 
 [deps]
 
-source_file="res://television_02.glb"
-dest_files=["res://.godot/imported/television_02.glb-8e956951d923b1ba329d079323075bb7.scn"]
+source_file="res://items/television_02.glb"
+dest_files=["res://.godot/imported/television_02.glb-56e8be2e902abf27a19a78adf883f267.scn"]
 
 [params]
 

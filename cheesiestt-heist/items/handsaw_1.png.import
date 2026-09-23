@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwibbqxb7mgm2"
-path.s3tc="res://.godot/imported/handsaw_1.png-6fa3dae413152773f2e510dc10ef31c3.s3tc.ctex"
+path.s3tc="res://.godot/imported/handsaw_1.png-9b230cb2fa5beb8299df335dded7315c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://handsaw_1.png"
-dest_files=["res://.godot/imported/handsaw_1.png-6fa3dae413152773f2e510dc10ef31c3.s3tc.ctex"]
+source_file="res://items/handsaw_1.png"
+dest_files=["res://.godot/imported/handsaw_1.png-9b230cb2fa5beb8299df335dded7315c.s3tc.ctex"]
 
 [params]
 

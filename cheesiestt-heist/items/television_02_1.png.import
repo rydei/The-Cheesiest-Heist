@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpey3eqsxublm"
-path.s3tc="res://.godot/imported/television_02_1.png-b4cea0a6cfecd4c7e3fc442e40d4dcdc.s3tc.ctex"
+path.s3tc="res://.godot/imported/television_02_1.png-c2dbd1a183077d7e027b2ef70f5959da.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://television_02_1.png"
-dest_files=["res://.godot/imported/television_02_1.png-b4cea0a6cfecd4c7e3fc442e40d4dcdc.s3tc.ctex"]
+source_file="res://items/television_02_1.png"
+dest_files=["res://.godot/imported/television_02_1.png-c2dbd1a183077d7e027b2ef70f5959da.s3tc.ctex"]
 
 [params]
 
