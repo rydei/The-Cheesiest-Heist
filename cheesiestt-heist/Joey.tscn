@@ -37,6 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://khesiyxkn0r3" path="res://items/japanese_edo_wall_hangings.glb" id="35_yqv61"]
 [ext_resource type="PackedScene" uid="uid://37gn7s57pjy7" path="res://items/trapdoor.glb" id="36_8ut87"]
 [ext_resource type="PackedScene" uid="uid://cco4siy2fstlp" path="res://items/horse_painting.glb" id="37_rplgj"]
+[ext_resource type="Script" uid="uid://kgxcb6t0rmav" path="res://zip_trigger.gd" id="38_8ut87"]
 [ext_resource type="PackedScene" uid="uid://cumo5wc55kc6x" path="res://items/free_cherry_jam_jar_-__low_poly.glb" id="38_35fle"]
 [ext_resource type="PackedScene" uid="uid://cr16y1u7an6ot" path="res://items/jar_candle_decor.glb" id="39_mqgg3"]
 [ext_resource type="PackedScene" uid="uid://l6royktvn08e" path="res://items/indoor_plant_decor.glb" id="40_8bruq"]
@@ -151,7 +152,7 @@ material = SubResource("StandardMaterial3D_ugcl7")
 flip_faces = true
 size = Vector2(1000, 500)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_ukn6s"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1kdae"]
 render_priority = 0
 shader = ExtResource("13_srhtt")
 shader_parameter/albedo = Color(1, 1, 1, 1)
@@ -488,6 +489,17 @@ shadow_mesh = SubResource("ArrayMesh_gvr4j")
 [sub_resource type="BoxShape3D" id="BoxShape3D_tp0se"]
 size = Vector3(0.1166687, 0.9298096, 0.099487305)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_srpwj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yyefr"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_54h1p"]
+material = SubResource("StandardMaterial3D_yyefr")
+top_radius = 0.19999999
+bottom_radius = 0.19999999
+height = 85.83765
+
 [node name="Node3D" type="Node3D" unique_id=224444514]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=173901890]
@@ -615,15 +627,15 @@ shape = SubResource("BoxShape3D_r5lwn")
 [node name="fan" parent="StaticBody3D8" unique_id=338898354 instance=ExtResource("9_yo1sp")]
 transform = Transform3D(0.14259566, 0, 0, 0, 0.2468945, 0, 0, 0, 0.155118, -144.48277, 90.01654, 429.66238)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Center/Fan_Blade_Supports" parent_id_path=PackedInt32Array(338898354, 1997242353) index="2" unique_id=676481786]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Center/Fan_Blade_Supports" parent_id_path=PackedInt32Array(338898354, 460073259) index="2" unique_id=676481786]
 callback_mode_process = 0
 libraries/ = SubResource("AnimationLibrary_rjf1t")
 autoplay = &"fan_spin"
 
-[node name="defaultMaterial7" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support_Shaft" parent_id_path=PackedInt32Array(338898354, 784494381) index="0" unique_id=1095480734]
+[node name="defaultMaterial7" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support_Shaft" parent_id_path=PackedInt32Array(338898354, 1569637800) index="0" unique_id=542116362]
 transform = Transform3D(1, 0, 0, 0, 1, 7.1054274e-14, 0, -5.684342e-14, 1.4959164, 0, 0, -0.3604393)
 
-[node name="defaultMaterial8" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support" parent_id_path=PackedInt32Array(338898354, 131929133) index="0" unique_id=38487250]
+[node name="defaultMaterial8" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support" parent_id_path=PackedInt32Array(338898354, 1496049038) index="0" unique_id=1245215924]
 transform = Transform3D(1.4897211, 0, 0, 0, 1.1511967, 2.5579538e-13, 0, -7.1054274e-14, 3.8699214, 0, 0, -0.039461136)
 
 [node name="Grounddd" type="StaticBody3D" parent="." unique_id=474581407]
@@ -778,7 +790,7 @@ mesh = SubResource("QuadMesh_pj0hq")
 
 [node name="SimpleGrassTextured" type="MultiMeshInstance3D" parent="Grass" unique_id=183446271]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 155.73593, 0)
-material_override = SubResource("ShaderMaterial_ukn6s")
+material_override = SubResource("ShaderMaterial_1kdae")
 multimesh = SubResource("MultiMesh_di23j")
 script = ExtResource("16_hbkp5")
 scale_h = 10.0
@@ -1328,6 +1340,29 @@ mesh = SubResource("ArrayMesh_x36is")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Stylized_Wood5/StaticBody3D" unique_id=153130786]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0077171326, -0.035095215, -0.005554199)
 shape = SubResource("BoxShape3D_tp0se")
+
+[node name="ZipTrigger" type="Area3D" parent="." unique_id=1795517472 node_paths=PackedStringArray("zip_start", "zip_end") groups=["target", "zipline"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.3, 245, 520.4)
+script = ExtResource("38_8ut87")
+zip_start = NodePath("../ZipStart")
+zip_end = NodePath("../ZipEnd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ZipTrigger" unique_id=1945416475]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0.12427819)
+shape = SubResource("SphereShape3D_srpwj")
+
+[node name="ZipStart" type="Marker3D" parent="." unique_id=989907469]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -39.3, 245, 520.4)
+
+[node name="ZipEnd" type="Marker3D" parent="." unique_id=1839919435]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 46, 245, 520)
+
+[node name="StaticBody3D23" type="StaticBody3D" parent="." unique_id=2049560078]
+transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, -39.3, 245, 520.4)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D23" unique_id=580489015]
+transform = Transform3D(4.371138e-08, 0.99999994, -2.2204454e-16, 0.99999994, -4.371139e-08, -2.2204459e-16, -2.2204459e-16, -2.2204455e-16, -0.9999999, 42.568237, -0.64941406, 1.800003)
+mesh = SubResource("CylinderMesh_54h1p")
 
 [editable path="Node3D"]
 [editable path="Node3D/Sketchfab_Scene"]
