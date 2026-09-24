@@ -37,6 +37,7 @@
 [ext_resource type="PackedScene" uid="uid://khesiyxkn0r3" path="res://items/japanese_edo_wall_hangings.glb" id="35_yqv61"]
 [ext_resource type="PackedScene" uid="uid://37gn7s57pjy7" path="res://items/trapdoor.glb" id="36_8ut87"]
 [ext_resource type="PackedScene" uid="uid://cco4siy2fstlp" path="res://items/horse_painting.glb" id="37_rplgj"]
+[ext_resource type="Script" uid="uid://kgxcb6t0rmav" path="res://zip_trigger.gd" id="38_8ut87"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_pj0hq"]
 panorama = ExtResource("1_mx3n2")
@@ -141,7 +142,7 @@ material = SubResource("StandardMaterial3D_ugcl7")
 flip_faces = true
 size = Vector2(1000, 500)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_yqv61"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ut87"]
 render_priority = 0
 shader = ExtResource("13_srhtt")
 shader_parameter/albedo = Color(1, 1, 1, 1)
@@ -334,6 +335,16 @@ size = Vector3(1, 0.14379883, 1.0639648)
 [sub_resource type="BoxShape3D" id="BoxShape3D_0dsku"]
 size = Vector3(0.03491211, 0.46694946, 0.6880493)
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_8ut87"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_78o86"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_a7rby"]
+material = SubResource("StandardMaterial3D_78o86")
+top_radius = 0.10546875
+bottom_radius = 0.10546875
+
 [node name="Node3D" type="Node3D" unique_id=224444514]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=173901890]
@@ -343,7 +354,7 @@ environment = SubResource("Environment_htemk")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 243.92737, 159.38683, 623.50006)
 
 [node name="Player" parent="Node3D" index="0" unique_id=1270840060]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -307.52313, 97.10933, -117.57968)
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -282.30432, 92.489914, -106.18634)
 
 [node name="DirectionalLight3D" parent="Node3D" index="2" unique_id=968416460]
 light_energy = 0.35
@@ -455,15 +466,15 @@ shape = SubResource("BoxShape3D_r5lwn")
 [node name="fan" parent="StaticBody3D8" unique_id=338898354 instance=ExtResource("9_yo1sp")]
 transform = Transform3D(0.14259566, 0, 0, 0, 0.2468945, 0, 0, 0, 0.155118, -144.48277, 90.01654, 429.66238)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Center/Fan_Blade_Supports" parent_id_path=PackedInt32Array(338898354, 1997242353) index="2" unique_id=676481786]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Center/Fan_Blade_Supports" parent_id_path=PackedInt32Array(338898354, 460073259) index="2" unique_id=676481786]
 callback_mode_process = 0
 libraries/ = SubResource("AnimationLibrary_rjf1t")
 autoplay = &"fan_spin"
 
-[node name="defaultMaterial7" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support_Shaft" parent_id_path=PackedInt32Array(338898354, 784494381) index="0" unique_id=1095480734]
+[node name="defaultMaterial7" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support_Shaft" parent_id_path=PackedInt32Array(338898354, 1569637800) index="0" unique_id=542116362]
 transform = Transform3D(1, 0, 0, 0, 1, 7.1054274e-14, 0, -5.684342e-14, 1.4959164, 0, 0, -0.3604393)
 
-[node name="defaultMaterial8" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support" parent_id_path=PackedInt32Array(338898354, 131929133) index="0" unique_id=38487250]
+[node name="defaultMaterial8" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support" parent_id_path=PackedInt32Array(338898354, 1496049038) index="0" unique_id=1245215924]
 transform = Transform3D(1.4897211, 0, 0, 0, 1.1511967, 2.5579538e-13, 0, -7.1054274e-14, 3.8699214, 0, 0, -0.039461136)
 
 [node name="Grounddd" type="StaticBody3D" parent="." unique_id=474581407]
@@ -618,7 +629,7 @@ mesh = SubResource("QuadMesh_pj0hq")
 
 [node name="SimpleGrassTextured" type="MultiMeshInstance3D" parent="Grass" unique_id=183446271]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 155.73593, 0)
-material_override = SubResource("ShaderMaterial_yqv61")
+material_override = SubResource("ShaderMaterial_8ut87")
 multimesh = SubResource("MultiMesh_di23j")
 script = ExtResource("16_hbkp5")
 scale_h = 10.0
@@ -939,6 +950,29 @@ transform = Transform3D(70, 0, 0, 0, 70, 0, 0, 0, 70, 51.608723, 229.59682, 477.
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_Scene3/StaticBody3D" unique_id=946693048]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015869737, 0.00062561035, -0.00015258789)
 shape = SubResource("BoxShape3D_0dsku")
+
+[node name="ZipTrigger" type="Area3D" parent="." unique_id=1794925534 node_paths=PackedStringArray("zip_start", "zip_end") groups=["target", "zipline"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.3, 250, 520.4)
+script = ExtResource("38_8ut87")
+zip_start = NodePath("../ZipStart")
+zip_end = NodePath("../ZipEnd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ZipTrigger" unique_id=291540285]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0.12427819)
+shape = SubResource("SphereShape3D_8ut87")
+
+[node name="ZipStart" type="Marker3D" parent="." unique_id=191278348]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -38.088, 250, 519.19)
+
+[node name="ZipEnd" type="Marker3D" parent="." unique_id=45881126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.31, 250, 520.4)
+
+[node name="StaticBody3D22" type="StaticBody3D" parent="." unique_id=1412778048]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.3, 250, 520.4)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D22" unique_id=1649370634]
+transform = Transform3D(-1.7032328e-07, 45, -2.270977e-06, 2.256, 3.3974056e-06, 1.7425091e-20, 2.5718102e-14, -6.7948113e-06, -15.04, 45.81419, 0, -1.0386963)
+mesh = SubResource("CylinderMesh_a7rby")
 
 [editable path="Node3D"]
 [editable path="Node3D/Sketchfab_Scene"]
