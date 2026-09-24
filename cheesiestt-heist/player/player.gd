@@ -11,11 +11,18 @@ const GRAVITY_UP = 30.0
 const GRAVITY_DOWN = 50.0
 const COYOTE_TIME = 0.15
 const JUMP_BUFFER_TIME = 0.15
+const ZIP_SPEED = 0.4
 
 var coyote_timer = 0.0
 var jump_buffer_timer = 0.0
 var is_sprinting = false
 var spawn_position: Vector3
+
+var is_ziplining = false
+var zip_t = 0.0
+var nearby_zipline: Node = null
+var zip_start_pos: Vector3
+var zip_end_pos: Vector3
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -37,7 +44,41 @@ func reset_player():
 	global_position = spawn_position
 	velocity = Vector3.ZERO
 
+func set_nearby_zipline(zip: Node) -> void:
+	nearby_zipline = zip
+
+func clear_nearby_zipline(zip: Node) -> void:
+	if nearby_zipline == zip:
+		nearby_zipline = null
+
+func start_zipline() -> void:
+	is_ziplining = true
+	zip_t = 0.0
+	velocity = Vector3.ZERO
+	zip_start_pos = nearby_zipline.zip_start.global_position
+	zip_end_pos = nearby_zipline.zip_end.global_position
+
+func zipline_process(delta):
+	zip_t += ZIP_SPEED * delta
+	global_position = zip_start_pos.lerp(zip_end_pos, zip_t)
+
+	if Input.is_action_just_pressed("ui_cancel"):
+		is_ziplining = false
+
+	if zip_t >= 1.0:
+		is_ziplining = false
+
 func _physics_process(delta):
+	# --- STATES FIRST: zipline takes over and skips normal movement ---
+	if is_ziplining:
+		zipline_process(delta)
+		return
+
+	if nearby_zipline != null and Input.is_action_just_pressed("zip"):
+		start_zipline()
+		return
+
+	# --- normal movement ---
 	is_sprinting = Input.is_action_pressed("sprint")
 	var current_speed = SPRINT_SPEED if is_sprinting else WALK_SPEED
 
