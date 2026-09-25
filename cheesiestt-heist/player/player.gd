@@ -70,6 +70,8 @@ func zipline_process(delta):
 
 func _physics_process(delta):
 	# --- STATES FIRST: zipline takes over and skips normal movement ---
+	if nearby_gun != null and held_gun == null and Input.is_action_just_pressed("interact"):
+		pick_up_gun()
 	if is_ziplining:
 		zipline_process(delta)
 		return
@@ -125,3 +127,34 @@ func _physics_process(delta):
 		velocity.y *= 0.5
 
 	move_and_slide()
+	if held_gun != null and Input.is_action_just_pressed("shoot"):
+		shoot_bullet()
+	
+var nearby_gun: Node3D = null
+var held_gun: Node3D = null
+
+func set_nearby_gun(gun: Node3D) -> void:
+	nearby_gun = gun
+	print("near gun")
+
+func clear_nearby_gun(gun: Node3D) -> void:
+	if nearby_gun == gun:
+		nearby_gun = null
+
+func pick_up_gun() -> void:
+	held_gun = nearby_gun
+	held_gun.reparent(%GunHolder)
+	held_gun.position = Vector3.ZERO
+	held_gun.rotation = Vector3.ZERO
+	held_gun.get_node("PickupZone").monitoring = false
+	nearby_gun = null
+	print("picked up gun")
+const BULLET_3D = preload("res://bullet_3d.tscn")
+
+func shoot_bullet() -> void:
+	if held_gun == null:
+		return
+	var muzzle := held_gun.get_node("Muzzle")
+	var new_bullet := BULLET_3D.instantiate()
+	get_tree().current_scene.add_child(new_bullet)
+	new_bullet.global_transform = muzzle.global_transform

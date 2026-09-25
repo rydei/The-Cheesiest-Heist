@@ -19,6 +19,10 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 current = true
 
+[node name="GunHolder" type="Marker3D" parent="Camera3D" unique_id=1796920081]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, -0.2, -0.4)
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=273991205]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 mesh = SubResource("CapsuleMesh_htemk")
