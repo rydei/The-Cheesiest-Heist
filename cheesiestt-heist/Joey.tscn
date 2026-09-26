@@ -5,7 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://cdgyj02q2elfk" path="res://cartoon_table.glb" id="2_ag8v5"]
 [ext_resource type="PackedScene" uid="uid://27m5si3wfmga" path="res://House/oggys_house.glb" id="2_di23j"]
 [ext_resource type="PackedScene" uid="uid://dqyh267ehjjxg" path="res://makerbot.tscn" id="3_ag8v5"]
+[ext_resource type="AudioStream" uid="uid://bov5f6ireaouu" path="res://Grass/HD - Squidward Walking Sound Effect.mp3" id="3_fthfa"]
+[ext_resource type="AudioStream" uid="uid://3vkq0ny5kq2c" path="res://Grass/freesound_community-item_respawn-91422.mp3" id="4_j8d5t"]
 [ext_resource type="PackedScene" uid="uid://dktxq0p6vyp6y" path="res://Vent/Vent.glb" id="4_srhtt"]
+[ext_resource type="Texture2D" uid="uid://dv0nbwcjymxsc" path="res://Grass/joey.png" id="5_df88l"]
 [ext_resource type="PackedScene" uid="uid://dlw17m1vmwmu0" path="res://chg_crowbar.glb" id="5_xd20q"]
 [ext_resource type="PackedScene" uid="uid://cd3c6kavxbq5c" path="res://cordless_drill.glb" id="6_i64f4"]
 [ext_resource type="PackedScene" uid="uid://y7jdb38nvlx5" path="res://handsaw.glb" id="7_lwqdi"]
@@ -26,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://gta045k0elk4" path="res://Road/sofa.glb" id="24_fthfa"]
 [ext_resource type="PackedScene" uid="uid://ceobr6rvs3o1r" path="res://Road/tv_remote_control.glb" id="25_j8d5t"]
 [ext_resource type="PackedScene" uid="uid://dxs6cduqlrd6d" path="res://Road/popcorn_bucket.glb" id="26_u03wj"]
+[ext_resource type="PackedScene" uid="uid://db1g8e3bmsdto" path="res://hud.tscn" id="29_u03wj"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_pj0hq"]
 panorama = ExtResource("1_mx3n2")
@@ -121,7 +125,7 @@ material = SubResource("StandardMaterial3D_ugcl7")
 flip_faces = true
 size = Vector2(1000, 500)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_srhtt"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_df88l"]
 render_priority = 0
 shader = ExtResource("13_srhtt")
 shader_parameter/albedo = Color(1, 1, 1, 1)
@@ -223,8 +227,36 @@ environment = SubResource("Environment_htemk")
 [node name="Node3D" parent="." unique_id=1637083029 instance=ExtResource("1_1ub1g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 243.92737, 159.38683, 623.50006)
 
-[node name="Player" parent="Node3D" index="0" unique_id=1270840060]
+[node name="Player" parent="Node3D" index="0" unique_id=1270840060 groups=["Player"]]
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -460.40356, 97.10933, -106.939026)
+
+[node name="walk_sound" type="AudioStreamPlayer3D" parent="Node3D/Player" index="3" unique_id=1529999887]
+stream = ExtResource("3_fthfa")
+
+[node name="SpawnSound" type="AudioStreamPlayer3D" parent="Node3D/Player" index="4" unique_id=939176585]
+stream = ExtResource("4_j8d5t")
+autoplay = true
+
+[node name="MapIcon" type="Sprite3D" parent="Node3D/Player" index="5" unique_id=1347475587]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)
+layers = 2
+axis = 1
+texture = ExtResource("5_df88l")
+
+[node name="Material36" parent="Node3D/Sketchfab_Scene/Sketchfab_model/Collada visual scene group" parent_id_path=PackedInt32Array(1637083029, 505617998, 65206105) index="16" unique_id=1105237678]
+layers = 3
+
+[node name="Material39" parent="Node3D/Sketchfab_Scene/Sketchfab_model/Collada visual scene group" parent_id_path=PackedInt32Array(1637083029, 505617998, 65206105) index="23" unique_id=121996144]
+layers = 3
+
+[node name="Material310" parent="Node3D/Sketchfab_Scene/Sketchfab_model/Collada visual scene group" parent_id_path=PackedInt32Array(1637083029, 505617998, 65206105) index="24" unique_id=1562611233]
+layers = 3
+
+[node name="Material312" parent="Node3D/Sketchfab_Scene/Sketchfab_model/Collada visual scene group" parent_id_path=PackedInt32Array(1637083029, 505617998, 65206105) index="26" unique_id=619026244]
+layers = 3
+
+[node name="Material319" parent="Node3D/Sketchfab_Scene/Sketchfab_model/Collada visual scene group" parent_id_path=PackedInt32Array(1637083029, 505617998, 65206105) index="37" unique_id=1902018647]
+layers = 3
 
 [node name="DirectionalLight3D" parent="Node3D" index="2" unique_id=968416460]
 light_energy = 0.35
@@ -329,6 +361,7 @@ shape = SubResource("BoxShape3D_14cdr")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Grounddd" unique_id=305401469]
 transform = Transform3D(1, 0, 0, 0, 1.1924881e-08, 1, 0, -1, 1.1924881e-08, 0, 159.92435, 414.79663)
+layers = 3
 mesh = SubResource("QuadMesh_q4lci")
 
 [node name="Rectangular Bush" parent="." unique_id=1606956411 instance=ExtResource("9_7pn0p")]
@@ -466,13 +499,14 @@ shape = SubResource("BoxShape3D_0kyq7")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Pavement 1" unique_id=2133239071]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 161.1778, 160.67676, 411.42865)
+layers = 3
 mesh = SubResource("QuadMesh_pj0hq")
 
 [node name="Grass" type="StaticBody3D" parent="." unique_id=52760784]
 
 [node name="SimpleGrassTextured" type="MultiMeshInstance3D" parent="Grass" unique_id=183446271]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 155.73593, 0)
-material_override = SubResource("ShaderMaterial_srhtt")
+material_override = SubResource("ShaderMaterial_df88l")
 multimesh = SubResource("MultiMesh_di23j")
 script = ExtResource("16_hbkp5")
 scale_h = 10.0
@@ -504,6 +538,7 @@ mesh = SubResource("QuadMesh_0kyq7")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Pavement 2" unique_id=80235881]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -58.743286, 160.2586, 1465.6099)
+layers = 3
 mesh = SubResource("QuadMesh_pp1to")
 
 [node name="fan collision" type="AnimatableBody3D" parent="." unique_id=1933869677]
@@ -602,6 +637,8 @@ transform = Transform3D(0.38346428, 0, 0.42363286, 0, 0.61124957, 0, -0.3516638,
 [node name="popcorn yummy" parent="StaticBody3D19" unique_id=2072947035 instance=ExtResource("26_u03wj")]
 transform = Transform3D(20.320591, -0.73903096, 1.3816557, 0.6852847, 22.907118, -0.46810448, -1.2680374, 0.53654003, 21.888363, 230.16136, 180.70967, 458.73077)
 top_level = true
+
+[node name="HUD" parent="." unique_id=116719295 instance=ExtResource("29_u03wj")]
 
 [editable path="Node3D"]
 [editable path="Node3D/Sketchfab_Scene"]

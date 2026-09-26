@@ -17,9 +17,15 @@ var jump_buffer_timer = 0.0
 var is_sprinting = false
 var spawn_position: Vector3
 
+@onready var spawn_sound = $SpawnSound
+@onready var walk_sound = $walk_sound
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	spawn_position = global_position
+	
+	spawn_sound.play()
+	
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -36,6 +42,7 @@ func _unhandled_input(event):
 func reset_player():
 	global_position = spawn_position
 	velocity = Vector3.ZERO
+	spawn_sound.play()
 
 func _physics_process(delta):
 	is_sprinting = Input.is_action_pressed("sprint")
@@ -80,7 +87,20 @@ func _physics_process(delta):
 		velocity.y = JUMP_VELOCITY + (SPRINT_JUMP_BONUS if is_sprinting else 0.0)
 		jump_buffer_timer = 0
 		coyote_timer = 0
+		
 	elif Input.is_action_just_released("jump") and velocity.y > 0:
 		velocity.y *= 0.5
 
 	move_and_slide()
+	
+	
+	var is_moving = abs(velocity.x) > 0.1 or abs(velocity.z) > 0.1
+	
+	# 3. Handle the audio playback
+	if is_moving and is_on_floor():
+		if not walk_sound.playing:
+			walk_sound.play()
+	else:
+		walk_sound.stop()
+		
+	

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bov5f6ireaouu"
+path="res://.godot/imported/HD - Squidward Walking Sound Effect.mp3-3337594863a8dbff9a00091d65a448a1.mp3str"
+
+[deps]
+
+source_file="res://Grass/HD - Squidward Walking Sound Effect.mp3"
+dest_files=["res://.godot/imported/HD - Squidward Walking Sound Effect.mp3-3337594863a8dbff9a00091d65a448a1.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

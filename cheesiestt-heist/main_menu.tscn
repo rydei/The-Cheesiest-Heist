@@ -1,0 +1,301 @@
+[gd_scene format=3 uid="uid://c2khfs6tbmqr5"]
+
+[ext_resource type="Texture2D" uid="uid://clh3dkymjqlo8" path="res://Rectangular Bush/oggy likes girls but I like guys.webp" id="1_jix8l"]
+[ext_resource type="Script" uid="uid://q2a3opgsg3of" path="res://onbuttonpressedtypeshi.gd" id="1_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://b2h36tg4bjvru" path="res://Grass/ogy final.png" id="2_glbon"]
+[ext_resource type="FontFile" uid="uid://tch5gjxu66rt" path="res://Grass/BitcountGridDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf" id="2_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://cpfp13slb5x1h" path="res://Grass/oggy_wow-removebg-preview.png" id="3_nlkkf"]
+[ext_resource type="AudioStream" uid="uid://jmllwtm7x44c" path="res://Grass/100. MEGALOVANIA (UNDERTALE Soundtrack) - Toby Fox.mp3" id="5_glbon"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iotk1"]
+bg_color = Color(1, 0.1876879, 0.6088354, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glbon"]
+bg_color = Color(0.79537266, 0.08530087, 0.59970564, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlkkf"]
+bg_color = Color(0.9476182, 0.5161414, 0.61326736, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+border_blend = true
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="Animation" id="Animation_8qtwp"]
+resource_name = "Chase balls Manreejh blocked me but who cares"
+length = 3.0000000000000004
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cockroaches:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.4668024),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1235, 743), Vector2(944, 759)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("oggy:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.4668024),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1848, 831.00006), Vector2(1519, 834)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cockroaches:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.4668024),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("oggy:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2.4668024),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("oggy:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.2617994, -0.2617994, 0.2617994, -0.2617994, 0.2617994, -0.2617994, 0.2617994, -0.2617994, 0.2617994, -0.2617994, 0.2617994, -0.2617994]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("cockroaches:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.08726646, -0.08726646, 0.08726646, -0.08726646, 0.08726646, -0.08726646, 0.08726646, -0.08726646, 0.08726646, -0.2617994, 0.08726646, -0.08726646]
+}
+
+[sub_resource type="Animation" id="Animation_jix8l"]
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("cockroaches:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1235, 743), Vector2(307, 715)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("oggy:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1848, 831.00006), Vector2(881.0001, 779)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("cockroaches:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("oggy:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("oggy:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.2617994]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("cockroaches:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dy7ct"]
+_data = {
+&"Chase balls Manreejh blocked me but who cares": SubResource("Animation_8qtwp"),
+&"RESET": SubResource("Animation_jix8l")
+}
+
+[node name="Main Menu" type="Control" unique_id=1477115850]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nlkkf")
+
+[node name="House background" type="TextureRect" parent="." unique_id=1777959766]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_jix8l")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=246954299]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -100.0
+offset_right = 500.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.4511978, 0.5073787, 0.5032308, 1)
+theme_override_fonts/normal_font = ExtResource("2_nlkkf")
+theme_override_fonts/bold_font = ExtResource("2_nlkkf")
+theme_override_fonts/bold_italics_font = ExtResource("2_nlkkf")
+theme_override_fonts/italics_font = ExtResource("2_nlkkf")
+theme_override_fonts/mono_font = ExtResource("2_nlkkf")
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
+text = "[rainbow freq=0.2 sat=1.0 val=1.0]THE CHEESIEST HEIST[/rainbow]
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="oggy" type="TextureRect" parent="." unique_id=2144268679]
+layout_mode = 0
+offset_left = 1848.0
+offset_top = 831.00006
+offset_right = 4857.0
+offset_bottom = 3814.0
+scale = Vector2(0.040000618, 0.080000155)
+texture = ExtResource("2_glbon")
+
+[node name="cockroaches" type="TextureRect" parent="." unique_id=7370825]
+layout_mode = 0
+offset_left = 1235.0
+offset_top = 743.0
+offset_right = 1901.0083
+offset_bottom = 1117.0
+texture = ExtResource("3_nlkkf")
+
+[node name="Button" type="Button" parent="." unique_id=1568901906]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 807.0
+offset_top = 635.0
+offset_right = 1043.0
+offset_bottom = 741.0
+theme_override_fonts/font = ExtResource("2_nlkkf")
+theme_override_font_sizes/font_size = 62
+theme_override_styles/normal = SubResource("StyleBoxFlat_iotk1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_glbon")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
+text = "Play"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1422443181]
+libraries/ = SubResource("AnimationLibrary_dy7ct")
+autoplay = &"Chase balls Manreejh blocked me but who cares"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=776843696]
+stream = ExtResource("5_glbon")
+autoplay = true
+
+[node name="fade away" type="ColorRect" parent="." unique_id=2138163616]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
