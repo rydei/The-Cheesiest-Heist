@@ -29,7 +29,8 @@ The game was made on Godot using GDScript and various assets including models fo
 | **Jump** | `Space` |
 | **Sprint/increase jump height** | `Shift/Shift+Space` |
 | **Reset** | `R` |
-
+| **Zipline** | `E` |
+| **Pick Up Cheese** | `G` |
 ---
 
 ## Assets & Credits
