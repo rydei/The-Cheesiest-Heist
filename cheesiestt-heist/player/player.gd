@@ -11,6 +11,7 @@ const GRAVITY_UP = 30.0
 const GRAVITY_DOWN = 50.0
 const COYOTE_TIME = 0.15
 const JUMP_BUFFER_TIME = 0.15
+const ZIP_SPEED = 0.4
 
 var coyote_timer = 0.0
 var jump_buffer_timer = 0.0
@@ -19,6 +20,11 @@ var spawn_position: Vector3
 
 @onready var spawn_sound = $SpawnSound
 @onready var walk_sound = $walk_sound
+var is_ziplining = false
+var zip_t = 0.0
+var nearby_zipline: Node = null
+var zip_start_pos: Vector3
+var zip_end_pos: Vector3
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
@@ -44,7 +50,43 @@ func reset_player():
 	velocity = Vector3.ZERO
 	spawn_sound.play()
 
+func set_nearby_zipline(zip: Node) -> void:
+	nearby_zipline = zip
+
+func clear_nearby_zipline(zip: Node) -> void:
+	if nearby_zipline == zip:
+		nearby_zipline = null
+
+func start_zipline() -> void:
+	is_ziplining = true
+	zip_t = 0.0
+	velocity = Vector3.ZERO
+	zip_start_pos = nearby_zipline.zip_start.global_position
+	zip_end_pos = nearby_zipline.zip_end.global_position
+
+func zipline_process(delta):
+	zip_t += ZIP_SPEED * delta
+	global_position = zip_start_pos.lerp(zip_end_pos, zip_t)
+
+	if Input.is_action_just_pressed("ui_cancel"):
+		is_ziplining = false
+
+	if zip_t >= 1.0:
+		is_ziplining = false
+
 func _physics_process(delta):
+	# --- STATES FIRST: zipline takes over and skips normal movement ---
+	if nearby_gun != null and held_gun == null and Input.is_action_just_pressed("interact"):
+		pick_up_gun()
+	if is_ziplining:
+		zipline_process(delta)
+		return
+
+	if nearby_zipline != null and Input.is_action_just_pressed("zip"):
+		start_zipline()
+		return
+
+	# --- normal movement ---
 	is_sprinting = Input.is_action_pressed("sprint")
 	var current_speed = SPRINT_SPEED if is_sprinting else WALK_SPEED
 
@@ -104,3 +146,34 @@ func _physics_process(delta):
 		walk_sound.stop()
 		
 	
+	if held_gun != null and Input.is_action_just_pressed("shoot"):
+		shoot_bullet()
+	
+var nearby_gun: Node3D = null
+var held_gun: Node3D = null
+
+func set_nearby_gun(gun: Node3D) -> void:
+	nearby_gun = gun
+	print("near gun")
+
+func clear_nearby_gun(gun: Node3D) -> void:
+	if nearby_gun == gun:
+		nearby_gun = null
+
+func pick_up_gun() -> void:
+	held_gun = nearby_gun
+	held_gun.reparent(%GunHolder)
+	held_gun.position = Vector3.ZERO
+	held_gun.rotation = Vector3.ZERO
+	held_gun.get_node("PickupZone").monitoring = false
+	nearby_gun = null
+	print("picked up gun")
+const BULLET_3D = preload("res://bullet_3d.tscn")
+
+func shoot_bullet() -> void:
+	if held_gun == null:
+		return
+	var muzzle := held_gun.get_node("Muzzle")
+	var new_bullet := BULLET_3D.instantiate()
+	get_tree().current_scene.add_child(new_bullet)
+	new_bullet.global_transform = muzzle.global_transform
