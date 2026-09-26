@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dbrcr2j7jpmwv"]
+
+[ext_resource type="Script" uid="uid://bmk01k1clwrmk" path="res://cheese.gd" id="1_s0ldm"]
+[ext_resource type="PackedScene" uid="uid://ycrw2ipi5dn4" path="res://Grass/cheese.glb" id="2_d3rdx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lrn7f"]
+size = Vector3(7.644079, 7.329106, 8.520412)
+
+[node name="Cheese" type="Area3D" unique_id=942065491]
+script = ExtResource("1_s0ldm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1225630120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.522233, 1.3737104, -0.9160185)
+shape = SubResource("BoxShape3D_lrn7f")
+
+[node name="cheese" parent="." unique_id=1261741992 instance=ExtResource("2_d3rdx")]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -3,6 +3,7 @@ extends CanvasLayer
 @onready var sub_viewport = $Control/RadarRing/MiniMap/SubViewport
 @onready var map_camera = $Control/RadarRing/MiniMap/SubViewport/MapCamera
 @onready var timer_label = $Control/TimerLabel
+@onready var loot_text = $Control/HBoxContainer/LootText
 
 var player
 var time_elapsed: float = 0.0
@@ -10,6 +11,8 @@ var time_elapsed: float = 0.0
 func _ready():
 	sub_viewport.world_3d = get_tree().root.get_viewport().world_3d
 	player = get_tree().get_first_node_in_group("Player")
+	if loot_text:
+		loot_text.text = "0/5"
 
 func _process(delta):
 	if player:
@@ -26,3 +29,7 @@ func _process(delta):
 func _input(event):
 	if event is InputEventKey and event.keycode == KEY_R and event.pressed:
 		time_elapsed = 0.0
+
+func update_cheese_ui(current_count: int):
+	if loot_text:
+		loot_text.text = str(current_count) + "/5"

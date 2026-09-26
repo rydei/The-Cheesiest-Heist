@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://byg0urt6dhuq3"]
+
+[ext_resource type="PackedScene" uid="uid://xalfo4cascu5" path="res://Grass/fridge.glb" id="1_ypa8n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xiplf"]
+size = Vector3(1, 1.7914429, 1.012207)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yjj0d"]
+size = Vector3(0.67845154, 0.18231201, 0.30358887)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7sbap"]
+size = Vector3(0.20056152, 1.5170898, 0.7026367)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x2utp"]
+size = Vector3(0.8361511, 0.30566406, 0.93688965)
+
+[node name="fridge" type="Area3D" unique_id=1357142616]
+transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 0, 0, 0)
+
+[node name="Sketchfab_Scene" parent="." unique_id=485531381 instance=ExtResource("1_ypa8n")]
+
+[node name="Cube_004" parent="Sketchfab_Scene/Sketchfab_model/fridge_fbx/Object_2/RootNode" parent_id_path=PackedInt32Array(485531381, 1768106530) index="0" unique_id=464363587]
+transform = Transform3D(0.78975016, 2.0551492e-16, -0.4589427, 6.1780366e-17, 0.91341865, 5.153414e-16, 0.4589427, -4.7661014e-16, 0.78975016, 39.716125, 159.16641, 54.800724)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1459790827]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1551457112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.93637335, -0.29797608)
+shape = SubResource("BoxShape3D_xiplf")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1816487008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05842352, 0.26296028, 0.731889)
+shape = SubResource("BoxShape3D_yjj0d")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=504702642]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05842352, 0.4083636, 0.36049244)
+shape = SubResource("BoxShape3D_yjj0d")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" unique_id=1485240094]
+transform = Transform3D(-0.0031366735, 0.99999493, 0, -0.99999493, -0.0031366735, 0, 0, 0, 1, -0.3353385, 0.5965738, 0.44297653)
+shape = SubResource("BoxShape3D_yjj0d")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D" unique_id=1089760277]
+transform = Transform3D(-0.0031366735, 0.99999493, 0, -0.99999493, -0.0031366735, 0, 0, 0, 1, -0.3353385, 1.2799587, 0.44297653)
+shape = SubResource("BoxShape3D_yjj0d")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D" unique_id=426385466]
+transform = Transform3D(-0.99879247, -0.049126834, 0, 0.049126834, -0.99879247, 0, 0, 0, 1, 0.025307769, 1.7368716, 0.44297653)
+shape = SubResource("BoxShape3D_yjj0d")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="StaticBody3D" unique_id=1349065582]
+transform = Transform3D(-0.99879247, -0.049126834, 0, 0.049126834, -0.99879247, 0, 0, 0, 1, 0.025307769, 1.5122299, 0.44297653)
+shape = SubResource("BoxShape3D_yjj0d")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="StaticBody3D" unique_id=724748982]
+transform = Transform3D(0.9425971, 0, 0.33393198, 0, 1, 0, -0.33393198, 0, 0.9425971, 0.59001356, 1.0542926, 0.8894586)
+shape = SubResource("BoxShape3D_7sbap")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="StaticBody3D" unique_id=707461791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.011998404, 0.07096008, 0.21990967)
+shape = SubResource("BoxShape3D_x2utp")
+
+[editable path="Sketchfab_Scene"]

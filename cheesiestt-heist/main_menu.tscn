@@ -253,8 +253,8 @@ vertical_alignment = 1
 layout_mode = 0
 offset_left = 1848.0
 offset_top = 831.00006
-offset_right = 4857.0
-offset_bottom = 3814.0
+offset_right = 6431.9766
+offset_bottom = 4563.999
 scale = Vector2(0.040000618, 0.080000155)
 texture = ExtResource("2_glbon")
 

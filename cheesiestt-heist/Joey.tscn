@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c1tdildhvrful" path="res://main.tscn" id="1_1ub1g"]
 [ext_resource type="Texture2D" uid="uid://dlh0h4rdj4yoy" path="res://Sky/Skyboxes/skybox-day.png" id="1_mx3n2"]
-[ext_resource type="PackedScene" uid="uid://cdgyj02q2elfk" path="res://items/cartoon_table.glb" id="2_ag8v5"]
+[ext_resource type="PackedScene" uid="uid://cdgyj02q2elfk" path="res://cartoon_table.glb" id="2_ag8v5"]
 [ext_resource type="PackedScene" uid="uid://27m5si3wfmga" path="res://House/oggys_house.glb" id="2_di23j"]
 [ext_resource type="PackedScene" uid="uid://dqyh267ehjjxg" path="res://makerbot.tscn" id="3_ag8v5"]
 [ext_resource type="AudioStream" uid="uid://bov5f6ireaouu" path="res://Grass/HD - Squidward Walking Sound Effect.mp3" id="3_fthfa"]
@@ -13,31 +13,25 @@
 [ext_resource type="PackedScene" uid="uid://cd3c6kavxbq5c" path="res://cordless_drill.glb" id="6_i64f4"]
 [ext_resource type="PackedScene" uid="uid://y7jdb38nvlx5" path="res://handsaw.glb" id="7_lwqdi"]
 [ext_resource type="PackedScene" uid="uid://bi8tilh4uscj2" path="res://free_3d_sofa__game_ready_asset.glb" id="8_prb3g"]
-[ext_resource type="PackedScene" uid="uid://dqyh267ehjjxg" path="res://items/makerbot.tscn" id="3_ag8v5"]
-[ext_resource type="PackedScene" uid="uid://dktxq0p6vyp6y" path="res://Vent/Vent.glb" id="4_srhtt"]
-[ext_resource type="PackedScene" uid="uid://dlw17m1vmwmu0" path="res://items/chg_crowbar.glb" id="5_xd20q"]
-[ext_resource type="PackedScene" uid="uid://cd3c6kavxbq5c" path="res://items/cordless_drill.glb" id="6_i64f4"]
-[ext_resource type="PackedScene" uid="uid://y7jdb38nvlx5" path="res://items/handsaw.glb" id="7_lwqdi"]
-[ext_resource type="PackedScene" uid="uid://bi8tilh4uscj2" path="res://items/free_3d_sofa__game_ready_asset.glb" id="8_prb3g"]
 [ext_resource type="PackedScene" uid="uid://clhw6s6ce46aa" path="res://Rectangular Bush/Rectangular Bush.glb" id="9_7pn0p"]
-[ext_resource type="PackedScene" uid="uid://cudnpt84jo8jf" path="res://items/ceiling_fan.glb" id="9_yo1sp"]
+[ext_resource type="PackedScene" uid="uid://cudnpt84jo8jf" path="res://ceiling_fan.glb" id="9_yo1sp"]
 [ext_resource type="Texture2D" uid="uid://c3vioawqnpm3p" path="res://Road/road.dds" id="10_rjf1t"]
 [ext_resource type="PackedScene" uid="uid://d4hmuennl4b8d" path="res://Lion/source/Lying Lion on Marble Pedestal.glb" id="11_mx3n2"]
 [ext_resource type="Shader" uid="uid://bi3o8elbtqoni" path="res://addons/simplegrasstextured/shaders/grass.gdshader" id="13_srhtt"]
 [ext_resource type="Texture2D" uid="uid://c4ggdp0kg5wjk" path="res://addons/simplegrasstextured/textures/grassbushcc008.png" id="14_1eil5"]
 [ext_resource type="ArrayMesh" uid="uid://sptcpdx6wtm8" path="res://addons/simplegrasstextured/default_mesh.tres" id="15_pp6qp"]
 [ext_resource type="Script" uid="uid://2juaclm8gc1n" path="res://addons/simplegrasstextured/grass.gd" id="16_hbkp5"]
-[ext_resource type="PackedScene" uid="uid://bi2xqhfvpw3h8" path="res://items/simple_philips_screwdriver.glb" id="19_1eil5"]
-[ext_resource type="PackedScene" uid="uid://c4yp6jo75io37" path="res://items/3d_cartoon_balloons.glb" id="20_pp6qp"]
-[ext_resource type="PackedScene" uid="uid://bi8vsaqs13ycq" path="res://items/mr.bean_car.glb" id="21_hbkp5"]
-[ext_resource type="PackedScene" uid="uid://slcco7gigsxm" path="res://items/board peg.glb" id="22_bjg3j"]
+[ext_resource type="PackedScene" uid="uid://bi2xqhfvpw3h8" path="res://simple_philips_screwdriver.glb" id="19_1eil5"]
+[ext_resource type="PackedScene" uid="uid://c4yp6jo75io37" path="res://3d_cartoon_balloons.glb" id="20_pp6qp"]
+[ext_resource type="PackedScene" uid="uid://bi8vsaqs13ycq" path="res://mr.bean_car.glb" id="21_hbkp5"]
+[ext_resource type="PackedScene" uid="uid://slcco7gigsxm" path="res://board peg.glb" id="22_bjg3j"]
 [ext_resource type="PackedScene" uid="uid://dsqrogfvpef4r" path="res://Road/television_02.glb" id="23_d0vfg"]
 [ext_resource type="PackedScene" uid="uid://gta045k0elk4" path="res://Road/sofa.glb" id="24_fthfa"]
 [ext_resource type="PackedScene" uid="uid://ceobr6rvs3o1r" path="res://Road/tv_remote_control.glb" id="25_j8d5t"]
 [ext_resource type="PackedScene" uid="uid://dxs6cduqlrd6d" path="res://Road/popcorn_bucket.glb" id="26_u03wj"]
-[ext_resource type="PackedScene" uid="uid://db1g8e3bmsdto" path="res://hud.tscn" id="29_u03wj"]
 [ext_resource type="PackedScene" uid="uid://doa6umt852flm" path="res://items/psx_style_wooden_bookshelf_low_poly.glb" id="27_fthfa"]
 [ext_resource type="PackedScene" uid="uid://chxpy6qk4tcxe" path="res://flower pot/source/flower pot.glb" id="28_j8d5t"]
+[ext_resource type="PackedScene" uid="uid://db1g8e3bmsdto" path="res://hud.tscn" id="29_u03wj"]
 [ext_resource type="PackedScene" uid="uid://wjbtvrwjcd8t" path="res://teacup/source/Cup4.glb" id="29_xfbmk"]
 [ext_resource type="PackedScene" uid="uid://dxhitfuqescde" path="res://items/dark_wooden_coffee_table.glb" id="30_uw3rw"]
 [ext_resource type="PackedScene" uid="uid://c8u8mwfpeaxx0" path="res://items/folded_newspaper.glb" id="31_akjdb"]
@@ -60,6 +54,8 @@
 [ext_resource type="Texture2D" uid="uid://beyt13y84ks8i" path="res://wooden planks/source/Stylized_Wood_Pillar_001_LP_DefaultMaterial_Height_Utility - Raw.png" id="47_srpwj"]
 [ext_resource type="Script" uid="uid://74hdsguyrkbr" path="res://static_body_3d_25.gd" id="49_srpwj"]
 [ext_resource type="PackedScene" uid="uid://cpgor8i0s8q1l" path="res://gun.tscn" id="50_s3t4g"]
+[ext_resource type="PackedScene" uid="uid://dbrcr2j7jpmwv" path="res://cheese.tscn" id="55_jeino"]
+[ext_resource type="PackedScene" uid="uid://byg0urt6dhuq3" path="res://fridge.tscn" id="56_hetiy"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_pj0hq"]
 panorama = ExtResource("1_mx3n2")
@@ -164,8 +160,7 @@ material = SubResource("StandardMaterial3D_ugcl7")
 flip_faces = true
 size = Vector2(1000, 500)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_df88l"]
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_s3t4g"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hetiy"]
 render_priority = 0
 shader = ExtResource("13_srhtt")
 shader_parameter/albedo = Color(1, 1, 1, 1)
@@ -1037,9 +1032,7 @@ environment = SubResource("Environment_htemk")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 243.92737, 159.38683, 623.50006)
 
 [node name="Player" parent="Node3D" index="0" unique_id=1270840060 groups=["Player"]]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -460.40356, 97.10933, -106.939026)
-[node name="Player" parent="Node3D" index="0" unique_id=1270840060]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -285.37115, 90.10933, -104.47644)
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -286.6701, 90.10933, -102.460205)
 
 [node name="walk_sound" type="AudioStreamPlayer3D" parent="Node3D/Player" index="3" unique_id=1529999887]
 stream = ExtResource("3_fthfa")
@@ -1185,15 +1178,15 @@ shape = SubResource("BoxShape3D_r5lwn")
 [node name="fan" parent="StaticBody3D8" unique_id=338898354 instance=ExtResource("9_yo1sp")]
 transform = Transform3D(0.14259566, 0, 0, 0, 0.2468945, 0, 0, 0, 0.155118, -144.48277, 90.01654, 429.66238)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Center/Fan_Blade_Supports" parent_id_path=PackedInt32Array(338898354, 460073259) index="2" unique_id=676481786]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Center/Fan_Blade_Supports" parent_id_path=PackedInt32Array(338898354, 445476525) index="2" unique_id=676481786]
 callback_mode_process = 0
 libraries/ = SubResource("AnimationLibrary_rjf1t")
 autoplay = &"fan_spin"
 
-[node name="defaultMaterial7" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support_Shaft" parent_id_path=PackedInt32Array(338898354, 1569637800) index="0" unique_id=542116362]
+[node name="defaultMaterial7" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support_Shaft" parent_id_path=PackedInt32Array(338898354, 930188508) index="0" unique_id=1088943805]
 transform = Transform3D(1, 0, 0, 0, 1, 7.1054274e-14, 0, -5.684342e-14, 1.4959164, 0, 0, -0.3604393)
 
-[node name="defaultMaterial8" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support" parent_id_path=PackedInt32Array(338898354, 1496049038) index="0" unique_id=1245215924]
+[node name="defaultMaterial8" parent="StaticBody3D8/fan/Sketchfab_model/Collada visual scene group/Ceiling/Fan_Support" parent_id_path=PackedInt32Array(338898354, 302955330) index="0" unique_id=677117324]
 transform = Transform3D(1.4897211, 0, 0, 0, 1.1511967, 2.5579538e-13, 0, -7.1054274e-14, 3.8699214, 0, 0, -0.039461136)
 
 [node name="Grounddd" type="StaticBody3D" parent="." unique_id=474581407]
@@ -1350,8 +1343,7 @@ mesh = SubResource("QuadMesh_pj0hq")
 
 [node name="SimpleGrassTextured" type="MultiMeshInstance3D" parent="Grass" unique_id=183446271]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 155.73593, 0)
-material_override = SubResource("ShaderMaterial_df88l")
-material_override = SubResource("ShaderMaterial_s3t4g")
+material_override = SubResource("ShaderMaterial_hetiy")
 multimesh = SubResource("MultiMesh_di23j")
 script = ExtResource("16_hbkp5")
 scale_h = 10.0
@@ -1536,9 +1528,10 @@ shape = SubResource("BoxShape3D_rkxbx")
 transform = Transform3D(39.899754, -1.4510598, 2.7128706, 1.3455659, 44.977272, -0.91911775, -2.4898086, 1.0534765, 42.977657, 278.57724, 180.70967, 458.73077)
 top_level = true
 
-[node name="HUD" parent="." unique_id=116719295 instance=ExtResource("29_u03wj")]
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D19" unique_id=2035927867]
 shape = SubResource("BoxShape3D_j0u46")
+
+[node name="HUD" parent="." unique_id=116719295 instance=ExtResource("29_u03wj")]
 
 [node name="StaticBody3D18" type="StaticBody3D" parent="." unique_id=868152413]
 
@@ -2031,6 +2024,24 @@ transform = Transform3D(70, 0, 0, 0, 70, 0, 0, 0, 70, 51.608723, 229.59682, 477.
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D26/Sketchfab_Scene3/StaticBody3D" unique_id=947142677]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015869737, 0.00062561035, -0.00015258789)
 shape = SubResource("BoxShape3D_0dsku")
+
+[node name="Cheese" parent="." unique_id=942065491 instance=ExtResource("55_jeino")]
+transform = Transform3D(-0.22101878, 0, -0.97526956, 0, 1, 0, 0.97526956, 0, -0.22101878, -85.13446, 180.6496, 500.29)
+
+[node name="Cheese2" parent="." unique_id=702219850 instance=ExtResource("55_jeino")]
+transform = Transform3D(-0.65617734, 0, -0.75460666, 0, 1, 0, 0.75460666, 0, -0.65617734, 29.204464, 200.56342, 538.2215)
+
+[node name="Cheese3" parent="." unique_id=2036702978 instance=ExtResource("55_jeino")]
+transform = Transform3D(-0.8834436, 0, 0.46853754, 0, 1, 0, -0.46853754, 0, -0.8834436, 97.8867, 176.6787, 298.21582)
+
+[node name="Cheese4" parent="." unique_id=162080173 instance=ExtResource("55_jeino")]
+transform = Transform3D(-0.8834436, 0, 0.46853754, 0, 1, 0, -0.46853754, 0, -0.8834436, 451.6194, 191.79985, 331.9384)
+
+[node name="Cheese5" parent="." unique_id=140633031 instance=ExtResource("55_jeino")]
+transform = Transform3D(-0.8834436, 0, 0.46853754, 0, 1, 0, -0.46853754, 0, -0.8834436, 449.61884, 198.8382, 331.01862)
+
+[node name="fridge" parent="." unique_id=1357142616 instance=ExtResource("56_hetiy")]
+transform = Transform3D(25, 0, 0, 0, 25, 0, 0, 0, 25, 451.4024, 172.82991, 326.065)
 
 [editable path="Node3D"]
 [editable path="Node3D/Sketchfab_Scene"]

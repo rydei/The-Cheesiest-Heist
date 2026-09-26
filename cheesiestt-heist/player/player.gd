@@ -17,6 +17,7 @@ var coyote_timer = 0.0
 var jump_buffer_timer = 0.0
 var is_sprinting = false
 var spawn_position: Vector3
+var cheese_count: int = 0
 
 @onready var spawn_sound = $SpawnSound
 @onready var walk_sound = $walk_sound
@@ -29,9 +30,7 @@ var zip_end_pos: Vector3
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	spawn_position = global_position
-	
 	spawn_sound.play()
-	
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -46,8 +45,17 @@ func _unhandled_input(event):
 		reset_player()
 
 func reset_player():
+	# Instant teleport back to spawn
 	global_position = spawn_position
 	velocity = Vector3.ZERO
+	
+	# Reset the cheese score to 0
+	cheese_count = 0
+	get_tree().call_group("HUD", "update_cheese_ui", cheese_count)
+	
+	# Bring all the cheese back
+	get_tree().call_group("Cheese", "reset_item")
+	
 	spawn_sound.play()
 
 func set_nearby_zipline(zip: Node) -> void:
@@ -75,9 +83,9 @@ func zipline_process(delta):
 		is_ziplining = false
 
 func _physics_process(delta):
-	# --- STATES FIRST: zipline takes over and skips normal movement ---
 	if nearby_gun != null and held_gun == null and Input.is_action_just_pressed("interact"):
 		pick_up_gun()
+		
 	if is_ziplining:
 		zipline_process(delta)
 		return
@@ -86,7 +94,6 @@ func _physics_process(delta):
 		start_zipline()
 		return
 
-	# --- normal movement ---
 	is_sprinting = Input.is_action_pressed("sprint")
 	var current_speed = SPRINT_SPEED if is_sprinting else WALK_SPEED
 
@@ -135,17 +142,14 @@ func _physics_process(delta):
 
 	move_and_slide()
 	
-	
 	var is_moving = abs(velocity.x) > 0.1 or abs(velocity.z) > 0.1
 	
-	# 3. Handle the audio playback
 	if is_moving and is_on_floor():
 		if not walk_sound.playing:
 			walk_sound.play()
 	else:
 		walk_sound.stop()
 		
-	
 	if held_gun != null and Input.is_action_just_pressed("shoot"):
 		shoot_bullet()
 	
@@ -168,6 +172,7 @@ func pick_up_gun() -> void:
 	held_gun.get_node("PickupZone").monitoring = false
 	nearby_gun = null
 	print("picked up gun")
+
 const BULLET_3D = preload("res://bullet_3d.tscn")
 
 func shoot_bullet() -> void:
@@ -177,3 +182,8 @@ func shoot_bullet() -> void:
 	var new_bullet := BULLET_3D.instantiate()
 	get_tree().current_scene.add_child(new_bullet)
 	new_bullet.global_transform = muzzle.global_transform
+
+func collect_cheese() -> void:
+	cheese_count += 1
+	get_tree().call_group("HUD", "update_cheese_ui", cheese_count)
+	print("Current cheese count: ", cheese_count)
