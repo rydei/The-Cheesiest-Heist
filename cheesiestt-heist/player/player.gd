@@ -83,6 +83,8 @@ func zipline_process(delta):
 		is_ziplining = false
 
 func _physics_process(delta):
+	if Input.is_action_just_pressed("interact"):
+		print("standing at: ", global_position)
 	if nearby_vent != null and Input.is_action_just_pressed("vent"):
 		use_vent()
 	if nearby_gun != null and held_gun == null and Input.is_action_just_pressed("interact"):
@@ -206,3 +208,8 @@ func use_vent() -> void:
 	velocity = Vector3.ZERO
 	nearby_vent = null
 	print("teleported")
+func respawn_at(pos: Vector3) -> void:
+	global_position = pos
+	velocity = Vector3.ZERO
+	spawn_sound.play()
+	print("respawned")
