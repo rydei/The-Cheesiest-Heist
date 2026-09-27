@@ -27,7 +27,6 @@ func _process(delta):
 	timer_label.text = "%02d:%02d" % [minutes, seconds]
 
 
-
 func update_cheese_ui(current_count: int):
 	if loot_text:
 		loot_text.text = str(current_count) + "/5"

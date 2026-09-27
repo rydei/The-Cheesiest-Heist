@@ -39,8 +39,6 @@ func _unhandled_input(event):
 		%Camera3D.rotation_degrees.x = clamp(
 			%Camera3D.rotation_degrees.x, -90.0, 90.0
 		)
-	elif event.is_action_pressed("ui_cancel"):
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	elif event.is_action_pressed("reset"):
 		reset_player()
 
@@ -49,6 +47,7 @@ func reset_player():
 	global_position = spawn_position
 	velocity = Vector3.ZERO
 	
+	# Reset the cheese score to 0
 	
 	
 	spawn_sound.play()
@@ -78,8 +77,6 @@ func zipline_process(delta):
 		is_ziplining = false
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("interact"):
-		print("standing at: ", global_position)
 	if nearby_vent != null and Input.is_action_just_pressed("vent"):
 		use_vent()
 	if nearby_gun != null and held_gun == null and Input.is_action_just_pressed("interact"):
@@ -201,10 +198,9 @@ func use_vent() -> void:
 		return
 	global_position = nearby_vent.exit_point.global_position
 	velocity = Vector3.ZERO
+	
+	# This line saves the new checkpoint!
+	spawn_position = global_position 
+	
 	nearby_vent = null
-	print("teleported")
-func respawn_at(pos: Vector3) -> void:
-	global_position = pos
-	velocity = Vector3.ZERO
-	spawn_sound.play()
-	print("respawned")
+	print("teleported and checkpoint saved")
