@@ -31,6 +31,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	spawn_position = global_position
 	spawn_sound.play()
+	add_to_group("Player")
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
