@@ -32,5 +32,9 @@ func update_cheese_ui(current_count: int):
 	if loot_text:
 		loot_text.text = str(current_count) + "/6"
 		
+	# The exact moment they hit 6, teleport them to the win screen!
+	if current_count >= 6:
+		get_tree().change_scene_to_file("res://win_screen.tscn")
+		
 func update_level_ui(room_name: String) -> void:
 	level_label.text = "Location: " + room_name
