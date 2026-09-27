@@ -204,3 +204,9 @@ func use_vent() -> void:
 	
 	nearby_vent = null
 	print("teleported and checkpoint saved")
+	
+func respawn_at(pos: Vector3) -> void:
+	global_position = pos
+	velocity = Vector3.ZERO
+	spawn_sound.play()
+	print("respawned")
