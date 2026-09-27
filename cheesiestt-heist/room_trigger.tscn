@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cdvg7qf82mbt6"]
+
+[ext_resource type="Script" uid="uid://dd1trdeq3kshr" path="res://room_trigger.gd" id="1_ifkap"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lrn7f"]
+size = Vector3(3.3601074, 10.763435, 8.907532)
+
+[node name="RoomTrigger" type="Area3D" unique_id=11115954]
+script = ExtResource("1_ifkap")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1091961790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1800537, 3.6652002, -3.9537659)
+shape = SubResource("BoxShape3D_lrn7f")

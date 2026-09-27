@@ -109,3 +109,17 @@ cull_mask = 2
 projection = 1
 size = 50.0
 far = 10000.0
+
+[node name="LevelLabel" type="Label" parent="." unique_id=662875582]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_64ctp")
+theme_override_font_sizes/font_size = 34
+text = "Location: Outside"

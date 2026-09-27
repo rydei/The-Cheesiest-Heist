@@ -4,6 +4,7 @@ extends CanvasLayer
 @onready var map_camera = $Control/RadarRing/MiniMap/SubViewport/MapCamera
 @onready var timer_label = $Control/TimerLabel
 @onready var loot_text = $Control/HBoxContainer/LootText
+@onready var level_label = $LevelLabel
 
 var player
 var time_elapsed: float = 0.0
@@ -30,3 +31,6 @@ func _process(delta):
 func update_cheese_ui(current_count: int):
 	if loot_text:
 		loot_text.text = str(current_count) + "/6"
+		
+func update_level_ui(room_name: String) -> void:
+	level_label.text = "Location: " + room_name
