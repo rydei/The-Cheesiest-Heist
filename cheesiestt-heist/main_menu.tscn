@@ -286,6 +286,7 @@ autoplay = &"Chase balls Manreejh blocked me but who cares"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=776843696]
 stream = ExtResource("5_glbon")
+volume_db = -4.0
 autoplay = true
 
 [node name="fade away" type="ColorRect" parent="." unique_id=2138163616]
