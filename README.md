@@ -30,7 +30,7 @@ The game was made on Godot using GDScript and various assets including models fo
 | **Sprint/increase jump height** | `Shift/Shift+Space` |
 | **Reset** | `R` |
 | **Zipline** | `E` |
-| **Pick Up Cheese** | `G` |
+| **Pick Up Cheese/Gun** | `G` |
 ---
 
 ## Assets & Credits
