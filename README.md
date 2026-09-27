@@ -3,7 +3,8 @@
 Relive the good ol' days of Oggy and the Cockroaches with this co-op game where you play as the cockroaches to steal the cheesiest cheese in the town from Oggy to devour it all by yourself!
 
 ---
-
+## Objective
+Remember the objective is to collect all cheese pieces and complete the parkour course then go beneath the chimney to end the game
 ## Overview
 
 The game was made on Godot using GDScript and various assets including models for interior and grass brush tool.
