@@ -29,4 +29,4 @@ func _process(delta):
 
 func update_cheese_ui(current_count: int):
 	if loot_text:
-		loot_text.text = str(current_count) + "/5"
+		loot_text.text = str(current_count) + "/6"
