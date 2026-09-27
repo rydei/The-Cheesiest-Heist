@@ -83,6 +83,8 @@ func zipline_process(delta):
 		is_ziplining = false
 
 func _physics_process(delta):
+	if nearby_vent != null and Input.is_action_just_pressed("vent"):
+		use_vent()
 	if nearby_gun != null and held_gun == null and Input.is_action_just_pressed("interact"):
 		pick_up_gun()
 		
@@ -187,3 +189,20 @@ func collect_cheese() -> void:
 	cheese_count += 1
 	get_tree().call_group("HUD", "update_cheese_ui", cheese_count)
 	print("Current cheese count: ", cheese_count)
+var nearby_vent: Node = null
+
+func set_nearby_vent(vent: Node) -> void:
+	nearby_vent = vent
+	print("near vent")
+
+func clear_nearby_vent(vent: Node) -> void:
+	if nearby_vent == vent:
+		nearby_vent = null
+
+func use_vent() -> void:
+	if nearby_vent == null or nearby_vent.exit_point == null:
+		return
+	global_position = nearby_vent.exit_point.global_position
+	velocity = Vector3.ZERO
+	nearby_vent = null
+	print("teleported")
