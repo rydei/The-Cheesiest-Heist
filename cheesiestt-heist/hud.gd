@@ -26,9 +26,7 @@ func _process(delta):
 	
 	timer_label.text = "%02d:%02d" % [minutes, seconds]
 
-func _input(event):
-	if event is InputEventKey and event.keycode == KEY_R and event.pressed:
-		time_elapsed = 0.0
+
 
 func update_cheese_ui(current_count: int):
 	if loot_text:
