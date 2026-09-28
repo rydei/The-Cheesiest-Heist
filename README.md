@@ -57,7 +57,7 @@ Most of the gameplay stuff (ziplines, vents, the lava floor, cheese, the gun) is
 ## What's done and what's not
 
 **Working now:**
-- Player movement with sprinting, coyote time and jump buffering, so jumps feels fair
+- Player movement with sprinting (Holding Shift gives extra Boost)
 - Ziplines
 - Vents that teleport you and save a checkpoint
 - Picking up the toy gun and shooting
