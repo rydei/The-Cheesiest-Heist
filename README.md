@@ -10,14 +10,14 @@ It's still very much a work in progress. Stuff will break, things will look weir
 ## The HEIST
 The whole game takes place inside (and around) Oggy's house, and you move through it room by room.
 
--  **The Escape.** It starts with Oggy chasing the roaches out. They get away by climbing up the car parked in front of the garage and slipping in through the vent.
+-  **The Escape.** It starts with Oggy chasing the roaches out. They get away by climbing up the zipline in front of the garage and slipping in through the vent.
 -  **The Garage.** A parkour course with ziplines and vents to get across.
--  **The Library.** There's a toy gun sitting somewhere up high. Get to it, find the hidden button, shoot it, and the paintings drop into place so you can climb higher.
--  **The Hallway.** The floor is lava. Literally, you touch it and you're sent back. The only safe way across is on the painitngs lying on the ground.
--  **The Kitchen.** Climb the shelves up to the fridge. Getting it open takes all three roaches working together.
--  **The Getaway.** Grab the cheese, run out the door and get away on the bike.
+-  **The Library.** There's a toy gun sitting somewhere. Get to it, find the hidden button, shoot it, and the paintings drop into place so you can climb higher.
+-  **The Hallway.** The only safe way across is on the objects lying on the ground.
+-  **The Kitchen.** Climb the shelves up to the fridge. (there's a secret cheese too, maybe check some shelf??)
+-  **The Getaway.** Grab the cheese and get away on the bike.
 
-Six pieces of cheese are hidden along the way. The HUD keeps count of how many you've picked up, how long you've been going, and shows a little radar minimap so you don't get lost.
+Six pieces of cheese are hidden along the way. The HUD keeps count of how many you've picked up, how long you've been going, and shows a little radar minimap.
 
 ##Controls
 | What | Key |
@@ -41,10 +41,8 @@ You'll need **Godot 4.7**. Older versions might open it, but we haven't tested t
 
 1. Clone the repo or download it as a zip from the green Code button.
 2. Open Godot, hit Import, and pick `cheesiestt-heist/project.godot`.
-3. The first import takes a while because there are a lot of models and textures. Let it finish.
-4. Press F5. You'll land on the main menu, and PLay takes you into the house.
-
-Heads up, the project is around 500 MB because of the house and all the furniture models, so the download isn't tiny either.
+3. The first import takes a while because there are a lot of models and textures, so be patient and let it finish.
+4. Press F5. You'll land on the main menu, and Play takes you into the house.
 
 ## How it's built
 
@@ -65,28 +63,24 @@ Most of the gameplay stuff (ziplines, vents, the lava floor, cheese, the gun) is
 - Picking up the toy gun and shooting
 - The hidden button that makes the paintings appear
 - The floor-is-lava hallway
-- Cheese collecting and the HUD (counter, tie, minimap)
+- Cheese collecting and the HUD (counter, time, minimap)
 - Main menu with a fade into the game, and a pause menu
 
 **Working on it:**
 - The opening cutscene, where you see Oggy chasing the roaches through his eyes
-- Proper cockroaches models and animations instead od the capsule
+- Proper cockroaches models and animations instead of the capsule
 - Grabbing and hanging off ledges
 - Finishing the parkour through the kitchen
 - The fridge and the bike ending
-- Multiplayer, which is the big one
+- Multiplayer, which is the big one(not gonna be soon </3).
 
 ## Known issues
-
-- The player is a capsule. We know. It's temporary.
-- The output panel gets spammed with debug prints while shooting. Those are left over from testing and will be cleaned up.
 - A few collision boxes don't line up perfectly eith the models yet, so you might clip into a wall or land slightly above a surface in some spots.
 
-If you find something else, open an issue and tell us where it happened. A screenshot helps a lot.
+If you find something else, open up an issue and tell us where it happened.
 
 ## Credits
-The 3D models come from a bunch of different creators on Sketchfab. We're putting together the full list with links and licenses and it'll be in the next update. If one of the models is yours and you want it credited differently or taken out, open an lissues and we'll sort it.
-
+The 3D models come from a bunch of different creators on Sketchfab. We're putting together the full lit with links and licenses and it'll be in the next update.
 Oggy and the Cockroaches and its characters belong to XILAM Animation. This is a fan project made for fun and isn't affiliated with them in any way.
 
 ## License
