@@ -37,12 +37,11 @@ Vents also save your checkpoint, so if you fall off something after going throug
 
 ## Running it yourself
 
-You'll need **Godot 4.7**. Older versions might open it, but we haven't tested them and some things probably won't work.
+1. Go to downloads section in https://rishukamboj.itch.io/the-cheesiest-heist 
 
-1. Clone the repo or download it as a zip from the green Code button.
-2. Open Godot, hit Import, and pick `cheesiestt-heist/project.godot`.
-3. The first import takes a while because there are a lot of models and textures, so be patient and let it finish.
-4. Press F5. You'll land on the main menu, and Play takes you into the house.
+2. Download the 3 files and run Cheesiestt-Heist.exe
+
+3. Enjoy!
 
 ## How it's built
 
